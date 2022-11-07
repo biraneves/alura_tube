@@ -14,6 +14,7 @@ const HomePage = () => {
                 <Menu />
                 <Header />
                 <Timeline playlists={config.playlists} />
+                <Favorites favorites={config.favorites} />
             </div>
         </>
     );
@@ -80,6 +81,61 @@ const Timeline = (props) => {
                 );
             })}
         </StyledTimeline>
+    );
+};
+
+const StyledFavorites = styled.div`
+    width: 100%;
+    padding: 16px 32px;
+    h2 {
+        font-size: 16px;
+        margin-bottom: 16px;
+        text-transform: capitalize;
+    }
+    div {
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+        width: 100%;
+        gap: 16px;
+    }
+    a {
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        align-items: center;
+    }
+    img {
+        border-radius: 50%;
+        margin-bottom: 12px;
+    }
+    p {
+        font-size: 14px;
+        margin-bottom: 16px;
+        text-transform: capitalize;
+        text-align: center;
+    }
+`;
+
+const Favorites = (props) => {
+    const favorites = props.favorites;
+    console.log(favorites);
+    return (
+        <StyledFavorites>
+            <h2>Favorites</h2>
+            <div>
+                {favorites.map((favorite) => {
+                    return (
+                        <>
+                            <a href={favorite.url} target="_blank">
+                                <img src={favorite.avatar} />
+                                <p>{favorite.user}</p>
+                            </a>
+                        </>
+                    );
+                })}
+            </div>
+        </StyledFavorites>
     );
 };
 

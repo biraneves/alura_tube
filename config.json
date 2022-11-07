@@ -2,6 +2,43 @@
     "name": "Bira Neves",
     "job": "Customer Success Supervisor",
     "github": "biraneves",
+    "favorites": [
+        {
+            "user": "Alura Cursos Online",
+            "avatar": "https://yt3.ggpht.com/xqhIoXspeX7eqouJvNHl1xqpv9213Pl26ENZbuouXxO2RlDadjsveNXfgnj8GTUk7thFYUkVRg=s88-c-k-c0x00ffffff-no-rj",
+            "url": "https://www.youtube.com/c/Alura"
+        },
+        {
+            "user": "Aniquilando",
+            "avatar": "https://yt3.ggpht.com/ytc/AMLnZu9tv2I39IX3oMFW02nERVdcd4xCL_33DA4EMYvg5g=s88-c-k-c0x00ffffff-no-rj",
+            "url": "https://www.youtube.com/c/biranevesedu"
+        },
+        {
+            "user": "Código Fonte TV",
+            "avatar": "https://yt3.ggpht.com/ytc/AMLnZu8lUVeJ1TiYevFOzZPNQFEQSDHc-TwiYKMcQpxpvA=s88-c-k-c0x00ffffff-no-rj",
+            "url": "https://www.youtube.com/c/codigofontetv"
+        },
+        {
+            "user": "Diolinux",
+            "avatar": "https://yt3.ggpht.com/aypXJDLRC-q7U8nNFRIM07EozoAe1neU2F_hNsbMtuFp6XLHFscxhK73JG-mVbjz_YuABStM-60=s88-c-k-c0x00ffffff-no-rj",
+            "url": "https://www.youtube.com/c/DiolinuxBr"
+        },
+        {
+            "user": "Fabio Akita",
+            "avatar": "https://yt3.ggpht.com/ytc/AMLnZu-rihMwxuXoZ2IjdwvfXegytnGVYquLdSBhRf5-ZOM=s88-c-k-c0x00ffffff-no-rj",
+            "url": "https://www.youtube.com/c/FabioAkita1990"
+        },
+        {
+            "user": "The Linux Experiment",
+            "avatar": "https://yt3.ggpht.com/ytc/AMLnZu8MeNGeUjphrCQQ9VmGncdLicbpOpe998ijE3e6=s88-c-k-c0x00ffffff-no-rj",
+            "url": "https://www.youtube.com/c/TheLinuxExperiment"
+        },
+        {
+            "user": "Learn Linux TV",
+            "avatar": "https://yt3.ggpht.com/6qsKfbtZT5igWnAPjTp8cJKm7TYxfVIvHX-_0TK1Pl7TNYP92wRV-UGTP-ioWXYUH9pqSV57Tg=s88-c-k-c0x00ffffff-no-rj",
+            "url": "https://www.youtube.com/c/LearnLinuxtv"
+        }
+    ],
     "playlists": {
         "linux": [
             {
