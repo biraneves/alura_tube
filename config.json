@@ -1,0 +1,133 @@
+{
+    "name": "Bira Neves",
+    "job": "Customer Success Supervisor",
+    "github": "biraneves",
+    "playlists": {
+        "linux": [
+            {
+                "title": "Rust no Linux: a linguagem que promete mudar o kernel",
+                "url": "https://www.youtube.com/watch?v=lkcIrgZyAOk",
+                "thumb": "https://img.youtube.com/vi/lkcIrgZyAOk/hqdefault.jpg"
+            },
+            {
+                "title": "Estão deixando a gente sonhar! - Ubuntu 22.10 Kinetic Kudu - Review",
+                "url": "https://www.youtube.com/watch?v=5WOQKL7tIfc",
+                "thumb": "https://img.youtube.com/vi/5WOQKL7tIfc/hqdefault.jpg"
+            },
+            {
+                "title": "O mínimo que você precisa saber sobre Docker",
+                "url": "https://www.youtube.com/watch?v=ntbpIfS44Gw",
+                "thumb": "https://img.youtube.com/vi/ntbpIfS44Gw/hqdefault.jpg"
+            },
+            {
+                "title": "GNOME 43: building a better Linux platform takes time",
+                "url": "https://www.youtube.com/watch?v=wefK40cjz9s",
+                "thumb": "https://img.youtube.com/vi/wefK40cjz9s/hqdefault.jpg"
+            },
+            {
+                "title": "9 amazing command line tools for Linux",
+                "url": "https://www.youtube.com/watch?v=kFh1acsQ8DQ",
+                "thumb": "https://img.youtube.com/vi/kFh1acsQ8DQ/hqdefault.jpg"
+            },
+            {
+                "title": "10 Linux terminal tips and tricks to enhance your workflow",
+                "url": "https://www.youtube.com/watch?v=nkvW0-bVXPc",
+                "thumb": "https://img.youtube.com/vi/nkvW0-bVXPc/hqdefault.jpg"
+            },
+            {
+                "title": "Ubuntu 22.10 is a HUGE improvement over 22.04",
+                "url": "https://www.youtube.com/watch?v=nbpO_HoiEAo",
+                "thumb": "https://img.youtube.com/vi/nbpO_HoiEAo/hqdefault.jpg"
+            },
+            {
+                "title": "O melhor setup dev com Arch e WSL2",
+                "url": "https://www.youtube.com/watch?v=sjrW74Hx5Po",
+                "thumb": "https://img.youtube.com/vi/sjrW74Hx5Po/hqdefault.jpg"
+            }
+        ],
+        "desenvolvimento": [
+            {
+                "title": "Subindo aplicações web em produção | Aprendendo HEROKU",
+                "url": "https://www.youtube.com/watch?v=TLRW_xTnQwY",
+                "thumb": "https://img.youtube.com/vi/TLRW_xTnQwY/hqdefault.jpg"
+            },
+            {
+                "title": "5 truques do VS Code pra você usar ainda hoje!",
+                "url": "https://www.youtube.com/watch?v=qJ_M4W0u5rI",
+                "thumb": "https://img.youtube.com/vi/qJ_M4W0u5rI/hqdefault.jpg"
+            },
+            {
+                "title": "Big O notation (descubra agora se seus algoritmos são eficientes) // Dicionário do programador",
+                "url": "https://www.youtube.com/watch?v=RGD3iwqDdAE",
+                "thumb": "https://img.youtube.com/vi/RGD3iwqDdAE/hqdefault.jpg"
+            },
+            {
+                "title": "💀 TOP 10 ameaças de segurança em aplicações web - DICAS DE PREVENÇÃO!",
+                "url": "https://www.youtube.com/watch?v=OzBy8nYLY-I",
+                "thumb": "https://img.youtube.com/vi/OzBy8nYLY-I/hqdefault.jpg"
+            },
+            {
+                "title": "5 cuidados que NINGUÉM ensina na programação",
+                "url": "https://www.youtube.com/watch?v=q8mgiv84tQE",
+                "thumb": "https://img.youtube.com/vi/q8mgiv84tQE/hqdefault.jpg"
+            },
+            {
+                "title": "Why companies are migrating from C++ to Rust",
+                "url": "https://www.youtube.com/watch?v=QzK2maO89uw",
+                "thumb": "https://img.youtube.com/vi/QzK2maO89uw/hqdefault.jpg"
+            },
+            {
+                "title": "Desafio: 10 projetos rápidos para treinar Programação e conseguir um emprego",
+                "url": "https://www.youtube.com/watch?v=fYR9L2ZmodM",
+                "thumb": "https://img.youtube.com/vi/fYR9L2ZmodM/hqdefault.jpg"
+            },
+            {
+                "title": "Aprendendo no Github, dicas de trabalho e melhorando documentações",
+                "url": "https://www.youtube.com/watch?v=yUPbwK_Pq_c",
+                "thumb": "https://img.youtube.com/vi/yUPbwK_Pq_c/hqdefault.jpg"
+            }
+        ],
+        "meus vídeos": [
+            {
+                "title": "Cálculo do MDC - o algoritmo de Euclides",
+                "url": "https://www.youtube.com/watch?v=lImRPIIWa6w",
+                "thumb": "https://img.youtube.com/vi/lImRPIIWa6w/hqdefault.jpg"
+            },
+            {
+                "title": "Vídeo-aula - S02E10 - Operações com notação científica",
+                "url": "https://www.youtube.com/watch?v=1YmtiuDUNgs",
+                "thumb": "https://img.youtube.com/vi/1YmtiuDUNgs/hqdefault.jpg"
+            },
+            {
+                "title": "Vídeo-aula - S02E08 - Método de Gauss-Jordan",
+                "url": "https://www.youtube.com/watch?v=YvWpAOoDZcQ",
+                "thumb": "https://img.youtube.com/vi/YvWpAOoDZcQ/hqdefault.jpg"
+            },
+            {
+                "title": "O sangue humano",
+                "url": "https://www.youtube.com/watch?v=AhNPhm044ww",
+                "thumb": "https://img.youtube.com/vi/AhNPhm044ww/hqdefault.jpg"
+            },
+            {
+                "title": "Prof. Bira Explica - Como calcular a raiz quadrada de um número",
+                "url": "https://www.youtube.com/watch?v=jWvDnPT1N9Y",
+                "thumb": "https://img.youtube.com/vi/jWvDnPT1N9Y/hqdefault.jpg"
+            },
+            {
+                "title": "Musiquinha de trigonometria - versão com letra e tabela",
+                "url": "https://www.youtube.com/watch?v=2FiCKoPBfZQ",
+                "thumb": "https://img.youtube.com/vi/2FiCKoPBfZQ/hqdefault.jpg"
+            },
+            {
+                "title": "Decidimos ter papel de parede... e resolvemos instalar sozinhos!",
+                "url": "https://www.youtube.com/watch?v=HZNSu4XmqZo",
+                "thumb": "https://img.youtube.com/vi/HZNSu4XmqZo/hqdefault.jpg"
+            },
+            {
+                "title": "Papel de parede - a aplicação",
+                "url": "https://www.youtube.com/watch?v=xd9N11Sakjk",
+                "thumb": "https://img.youtube.com/vi/xd9N11Sakjk/hqdefault.jpg"
+            }
+        ]
+    }
+}
