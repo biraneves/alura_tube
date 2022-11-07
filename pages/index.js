@@ -1,7 +1,9 @@
 import config from '../config.json';
 import styled from 'styled-components';
-import { CSSReset } from '../src/components/CSSReset';
 import Menu from '../src/components/Menu';
+import Image from 'next/image';
+import bannerPic from '../src/static/img/banner_alura_tube.png';
+import { CSSReset } from '../src/components/CSSReset';
 import { StyledTimeline } from '../src/components/Timeline';
 
 const HomePage = () => {
@@ -18,25 +20,31 @@ const HomePage = () => {
 };
 
 const StyledHeader = styled.div`
-    img {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
+    margin-top: 56px;
+    z-index: -10;
+    .banner {
+        width: 100%;
     }
     .user-info {
-        margin-top: 50px;
+        margin-top: 30px;
         display: flex;
         align-items: center;
         width: 100%;
         padding: 16px 32px;
         gap: 16px;
     }
+    .user-info > img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
 `;
 
 const Header = () => {
+    // TODO: Corrigir a ocultação do menu quando rolamos a página.
     return (
         <StyledHeader>
-            <img src="" />
+            <Image className="banner" src={bannerPic} />
             <section className="user-info">
                 <img src={`https://github.com/${config.github}.png`} />
                 <div>
