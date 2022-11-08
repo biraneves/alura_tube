@@ -1,24 +1,32 @@
 import config from '../config.json';
 import styled from 'styled-components';
 import Menu from '../src/components/Menu';
-import Image from 'next/image';
 import bannerPic from '../src/static/img/banner_alura_tube.png';
 import { CSSReset } from '../src/components/CSSReset';
 import { StyledTimeline } from '../src/components/Timeline';
+import React from 'react';
 
-const HomePage = () => {
+function HomePage() {
+    const [filterValue, setFilterValue] = React.useState('');
+
     return (
         <>
             <CSSReset />
             <div>
-                <Menu />
+                <Menu
+                    filterValue={filterValue}
+                    setFilterValue={setFilterValue}
+                />
                 <Header />
-                <Timeline playlists={config.playlists} />
+                <Timeline
+                    searchValue={filterValue}
+                    playlists={config.playlists}
+                />
                 <Favorites favorites={config.favorites} />
             </div>
         </>
     );
-};
+}
 
 const StyledHeader = styled.div`
     margin-top: 56px;
@@ -27,7 +35,6 @@ const StyledHeader = styled.div`
         width: 100%;
     }
     .user-info {
-        margin-top: 30px;
         display: flex;
         align-items: center;
         width: 100%;
@@ -41,11 +48,15 @@ const StyledHeader = styled.div`
     }
 `;
 
-const Header = () => {
-    // TODO: Corrigir a ocultação do menu quando rolamos a página.
+const StyledBanner = styled.div`
+    background-image: url(${({ bg }) => bg});
+    height: 230px;
+`;
+
+function Header() {
     return (
         <StyledHeader>
-            <Image className="banner" src={bannerPic} />
+            <StyledBanner bg={config.bg} />
             <section className="user-info">
                 <img src={`https://github.com/${config.github}.png`} />
                 <div>
@@ -55,9 +66,9 @@ const Header = () => {
             </section>
         </StyledHeader>
     );
-};
+}
 
-const Timeline = (props) => {
+function Timeline({ searchValue, ...props }) {
     const playlistsNames = Object.keys(props.playlists);
     return (
         <StyledTimeline>
@@ -65,24 +76,39 @@ const Timeline = (props) => {
                 const videos = props.playlists[playlistName];
 
                 return (
-                    <section>
+                    <section key={playlistName}>
                         <h2>{playlistName}</h2>
                         <div>
-                            {videos.map((video) => {
-                                return (
-                                    <a href={video.url} target="_blank">
-                                        <img src={video.thumb} />
-                                        <span>{video.title}</span>
-                                    </a>
-                                );
-                            })}
+                            {videos
+                                .filter((video) => {
+                                    const titleNormalized =
+                                        video.title.toLowerCase();
+                                    const searchValueNormalized =
+                                        searchValue.toLowerCase();
+
+                                    return titleNormalized.includes(
+                                        searchValueNormalized,
+                                    );
+                                })
+                                .map((video) => {
+                                    return (
+                                        <a
+                                            key={video.url}
+                                            href={video.url}
+                                            target="_blank"
+                                        >
+                                            <img src={video.thumb} />
+                                            <span>{video.title}</span>
+                                        </a>
+                                    );
+                                })}
                         </div>
                     </section>
                 );
             })}
         </StyledTimeline>
     );
-};
+}
 
 const StyledFavorites = styled.div`
     width: 100%;
@@ -98,6 +124,7 @@ const StyledFavorites = styled.div`
         align-items: left;
         width: 100%;
         gap: 16px;
+        overflow: hidden;
     }
     a {
         display: flex;
@@ -117,9 +144,8 @@ const StyledFavorites = styled.div`
     }
 `;
 
-const Favorites = (props) => {
+function Favorites(props) {
     const favorites = props.favorites;
-    console.log(favorites);
     return (
         <StyledFavorites>
             <h2>Favorites</h2>
@@ -137,6 +163,6 @@ const Favorites = (props) => {
             </div>
         </StyledFavorites>
     );
-};
+}
 
 export default HomePage;
