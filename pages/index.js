@@ -122,7 +122,7 @@ const StyledFavorites = styled.div`
         display: flex;
         flex-direction: row;
         align-items: left;
-        width: 100%;
+        width: calc(100vw - 16px * 4);
         gap: 16px;
         overflow: hidden;
     }
